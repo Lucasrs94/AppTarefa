@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTarefa.Tela.Cadastro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nome"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="nome"/>
+            <Label Text="Prioridade" FontAttributes="Bold"/>
+            <StackLayout x:Name="SLprio">
+                <StackLayout Spacing="10">
+                    <Image/>
+
+                    <Label Text="Urgente e importante" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+                <StackLayout Spacing="10">
+                    <Image/>
+
+                    <Label Text="Urgente não importante" HorizontalOptions="FillAndExpand"/>
+                    <StackLayout Spacing="10">
+                        <Image/>
+
+                        <Label Text="nao urnegente e importante" HorizontalOptions="FillAndExpand"/>
+                        <StackLayout Spacing="10">
+                            <Image/>
+
+                            <Label Text="Urgente" HorizontalOptions="FillAndExpand"/>
+                           
+                        </StackLayout>
+                        <Button Text="OK" HorizontalOptions="End" BackgroundColor="Blue" TextColor="White"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

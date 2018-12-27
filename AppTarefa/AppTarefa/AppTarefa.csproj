@@ -12,4 +12,17 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Modelo\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Tela\Cadastro.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Tela\Inicioxaml.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>

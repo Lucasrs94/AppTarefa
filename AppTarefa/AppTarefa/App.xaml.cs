@@ -11,7 +11,7 @@ namespace AppTarefa
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new AppTarefa.Tela.Inicioxaml());
         }
 
         protected override void OnStart()

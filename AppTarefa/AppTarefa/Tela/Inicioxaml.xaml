@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTarefa.Tela.Inicioxaml">
+    <ContentPage.Content>
+        <StackLayout x:Name="SLTarefa" Padding="10" Spacing="10">
+            <StackLayout  BackgroundColor="blue" HeightRequest="250">
+                <Label Text="Meu Dia" FontSize="24" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="blue" TextColor="White"/>
+                <Label Text="Quinta , 29/12"   HorizontalOptions="Start"    VerticalOptions="End" BackgroundColor="blue" TextColor="White"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"  Spacing="15">
+                <Image VerticalOptions="Center"/>
+                <Label HorizontalOptions="FillAndExpand" Text="Tas 1"/>
+
+                <Image VerticalOptions="Center"/>
+                <Image VerticalOptions="Center"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Spacing="15" >
+                <Image/>
+                <StackLayout HorizontalOptions="FillAndExpand" Spacing="0">
+                    <Label Text="Tas 1" TextColor="LightBlue" />
+                    <Label Text="Finalizado" FontSize="10" TextColor="Gray"/>
+                </StackLayout>
+                <Image VerticalOptions="Center"/>
+                <Image VerticalOptions="Center"/>
+                <Image VerticalOptions="Center"/>
+            </StackLayout>
+            <Button Text="Adicionar" Clicked="ActionCadastro" HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
